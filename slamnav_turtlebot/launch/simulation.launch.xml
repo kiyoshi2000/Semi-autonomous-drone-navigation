@@ -1,0 +1,38 @@
+<launch>
+    <!-- Simulation -->
+    <set_env name="TURTLEBOT3_MODEL" value="burger"/>
+    <include file="$(find-pkg-share turtlebot3_gazebo)/launch/turtlebot3_house.launch.py"/> 
+	
+    <include file="$(find-pkg-share turtlebot3_gazebo)/launch/robot_state_publisher.launch.py">
+        <arg name="use_sim_time" value="true"/>
+    </include>
+
+    <!-- SLAM -->
+	<!-- <include file="$(find-pkg-share slam_toolbox)/launch/online_sync_launch.py" /> -->
+
+	<!-- Visualization -->
+    <!-- <node pkg="rviz2" exec="rviz2" name="rviz2"  args="-d $(find-pkg-share slamnav_turtlebot)/config/rviz-nav.rviz"/> -->
+
+	<!-- Teleop -->
+	<node pkg="joy" exec="joy_node" name="joy"/>
+	<node pkg="slamnav_turtlebot" exec="joy_teleop" name="teleop">
+		<param name="linear_factor" value="0.25"/>
+		<param name="angular_factor" value="2.0"/>
+    </node>
+
+    <!-- We do not use the multiplexer because we are not able to remap the velocity output of the nav2 nodes to /nav_vel -->
+    <!-- nore we are able to change the subscribed velocity topic of gzserver to something different from /cmd_vel -->
+
+    <!-- Multiplexer for handling the multiple inputs for the robot -->
+	<!-- <arg name="config_topics" default="$(find-pkg-share slamnav_turtlebot)/config/mux.yaml"/> -->
+	<!-- <node pkg="twist_mux" exec="twist_mux" name="twist_mux" output="screen"> -->
+	<!-- 	<remap from="cmd_vel_out" to="/commands/velocity"/> -->
+
+	<!-- 	<param from="$(var config_topics)"/> -->
+	<!-- </node> -->
+
+    <!-- <include file="$(find-pkg-share slamnav_turtlebot)/launch/nav.launch.xml"> -->
+        <!-- <arg name="slam_params_file" value="$(find-pkg-share slamnav_turtlebot)/config/mapper_params.yaml"/> -->
+    <!-- </include> -->
+
+</launch>

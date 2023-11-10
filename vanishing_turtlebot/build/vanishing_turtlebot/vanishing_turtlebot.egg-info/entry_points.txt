@@ -1,0 +1,6 @@
+[console_scripts]
+controller = vanishing_turtlebot.controller:main
+joy_teleop = vanishing_turtlebot.joy_teleop:main
+paramissue = vanishing_turtlebot.param_issue:main
+twist2pic = vanishing_turtlebot.twist2pic:main
+

@@ -1,0 +1,10 @@
+<launch>
+    <arg name="rviz" default="true"/>
+
+
+    <!-- Visualization -->
+    <node pkg="rviz2" exec="rviz2" name="rviz2"  args="-d $(find-pkg-share slamnav_turtlebot)/config/rviz-slam.rviz" if="$(var rviz)"/>
+    
+    <include file="$(find-pkg-share slam_toolbox)/launch/online_sync_launch.py"/>
+
+</launch>

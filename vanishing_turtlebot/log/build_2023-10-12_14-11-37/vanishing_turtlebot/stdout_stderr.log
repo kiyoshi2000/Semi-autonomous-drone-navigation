@@ -1,0 +1,26 @@
+/usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+  warnings.warn(
+running egg_info
+writing build/vanishing_turtlebot/vanishing_turtlebot.egg-info/PKG-INFO
+writing dependency_links to build/vanishing_turtlebot/vanishing_turtlebot.egg-info/dependency_links.txt
+writing entry points to build/vanishing_turtlebot/vanishing_turtlebot.egg-info/entry_points.txt
+writing requirements to build/vanishing_turtlebot/vanishing_turtlebot.egg-info/requires.txt
+writing top-level names to build/vanishing_turtlebot/vanishing_turtlebot.egg-info/top_level.txt
+reading manifest file 'build/vanishing_turtlebot/vanishing_turtlebot.egg-info/SOURCES.txt'
+writing manifest file 'build/vanishing_turtlebot/vanishing_turtlebot.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/st5dronelab/Ros/src/vanishing_turtlebot/install/vanishing_turtlebot/lib/python3.10/site-packages/vanishing_turtlebot-0.0.0-py3.10.egg-info' (and everything under it)
+Copying build/vanishing_turtlebot/vanishing_turtlebot.egg-info to /home/st5dronelab/Ros/src/vanishing_turtlebot/install/vanishing_turtlebot/lib/python3.10/site-packages/vanishing_turtlebot-0.0.0-py3.10.egg-info
+running install_scripts
+Installing controller script to /home/st5dronelab/Ros/src/vanishing_turtlebot/install/vanishing_turtlebot/lib/vanishing_turtlebot
+Installing joy_teleop script to /home/st5dronelab/Ros/src/vanishing_turtlebot/install/vanishing_turtlebot/lib/vanishing_turtlebot
+Installing paramissue script to /home/st5dronelab/Ros/src/vanishing_turtlebot/install/vanishing_turtlebot/lib/vanishing_turtlebot
+Installing twist2pic script to /home/st5dronelab/Ros/src/vanishing_turtlebot/install/vanishing_turtlebot/lib/vanishing_turtlebot
+writing list of installed files to '/home/st5dronelab/Ros/src/vanishing_turtlebot/build/vanishing_turtlebot/install.log'
