@@ -67,7 +67,7 @@ It outputs:
 
 | TurtleBot Corridor | Drone Corridor   |
 | ------------------ | ---------------- |
-| ![vp1](images\vp1.jpeg)   | ![vp2](images\vp2.jpeg) |
+| ![vp1](images/vp1.jpeg)  | ![vp2](images/vp2.jpeg) |
 
 ---
 
@@ -81,7 +81,7 @@ After testing visual control, we extended the project using **ROS2 SLAM Toolbox*
 
 **Example RViz map:**
 
-![SLAM Map](images\slam.png)
+![SLAM Map](images/slam.png)
 
 ---
 
